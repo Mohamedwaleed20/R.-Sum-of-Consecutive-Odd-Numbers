@@ -1,0 +1,1 @@
+# R. Sum of Consecutive Odd Numbers
