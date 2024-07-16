@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int t = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < t; i++)
+        {
+            string[] xy = Console.ReadLine().Split(' ');
+            int x = Convert.ToInt32(xy[0]);
+            int y = Convert.ToInt32(xy[1]);
+            int sum = 0;
+            for (int j = Math.Min(x, y) + 1; j < Math.Max(x, y); j++)
+            {
+                if (j % 2 != 0)
+                {
+                    sum += j;
+                }
+            }
+            Console.WriteLine(sum);
+        }
+    }
+}
